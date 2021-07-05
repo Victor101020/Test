@@ -1,9 +1,0 @@
-print('Введите количество значений в строке')
-a=int(input())
-print('Введите цифры через ентер')
-b = []
-i =0
-for i in range(0, a):
-    b2 = int(input())
-    b.append(b2)
-print('Ваш список = ',b)
