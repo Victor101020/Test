@@ -1,0 +1,14 @@
+a=input()
+a2=a+' '
+b=[]
+d=1
+for j in range(len(a)):
+    if a2[j]==a2[j+1]:
+        d+=1
+    else:
+        b.append(a[j])
+        b.append(d)
+        d=1
+с="".join([str(_) for _ in b])
+print(с)
+# тут можно в else дописать сразу вывод на экран с методом end='', тогда сразу будет выводиться в строчку 

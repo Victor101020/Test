@@ -1,0 +1,8 @@
+a=sorted(input().lower())
+b=[]
+for i in a:
+    if i in b:
+        continue
+    b+=i,a.count(i)
+с="".join([str(_) for _ in b])
+print(с)

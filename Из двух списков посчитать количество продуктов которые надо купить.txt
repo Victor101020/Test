@@ -1,0 +1,31 @@
+def print_shopping_list(dish1,dish2):
+    set_dish1 = set(dish1)
+    set_dish2 = set(dish2)
+    a= set_dish1.union(set_dish2)
+    for i in a:
+        if i in dish1 and i in dish2:
+            a = dish1[i] + dish2[i]
+            print(i,a, sep=': ')
+        elif i in dish1:
+            a=dish1[i]
+            print(i,a, sep=': ')
+        elif i in dish2:
+            a=dish2[i]
+            print(i,a, sep=': ')
+     
+   
+
+
+pizza = {'мука, кг': 1,
+         'помидоры, кг': 1.5,
+         'шампиньоны, кг': 1.5,
+         'сыр, кг': 0.8,
+         'оливковое масло, л': 0.1,
+         'дрожжи, г': 50}
+salad = {'огурцы, кг': 1,
+         'перцы, кг': 1,
+         'помидоры, кг': 1.5,
+         'оливковое масло, л': 0.1,
+         'листья салата, кг': 0.4}
+
+print_shopping_list(pizza, salad)
